@@ -7,11 +7,12 @@
 --%>
 <div class="navbar navbar-inverse" role="navigation">
     <div class="navbar-inner nav-collapse" style="height: auto;">
+        <c:set var="someVar" value=" "></c:set>
 
         <ul class="nav">
             <li><a href="${pageContext.request.contextPath}/transactions/create.html">Transaction</a></li>
             <li ><a href="${pageContext.request.contextPath}/categories/create.html">Categories</a></li>
-            <li ><a href="${pageContext.request.contextPath}/budgets/create.html">Budget</a></li>
+            <li ><a href="${pageContext.request.contextPath}/budgets/${someVar}">Budget</a></li>
         </ul>
 
 

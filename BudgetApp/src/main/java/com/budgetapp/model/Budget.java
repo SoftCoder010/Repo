@@ -27,6 +27,8 @@ public class Budget {
 
     private Float value;
 
+    private Boolean isDefault;
+
     @Override
     public String toString() {
         return "Budget{" +
@@ -37,6 +39,7 @@ public class Budget {
                 ", day2=" + day2 +
                 ", month=" + month +
                 ", value=" + value +
+                ", isDefault=" + isDefault +
                 '}';
     }
 
@@ -46,6 +49,7 @@ public class Budget {
         this.day2 = budget.day2;
         this.type = budget.type;
         this.value = budget.value;
+        this.isDefault = budget.isDefault;
         return this;
     }
 
@@ -103,6 +107,14 @@ public class Budget {
 
     public void setValue(Float value) {
         this.value = value;
+    }
+
+    public Boolean getIsDefault() {
+        return isDefault;
+    }
+
+    public void setIsDefault(Boolean isDefault) {
+        this.isDefault = isDefault;
     }
 
 }
